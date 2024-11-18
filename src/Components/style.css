@@ -1,0 +1,81 @@
+/* Style for active link */
+.header-links h4.active {
+  color: rgb(201, 183, 157);
+  font-weight: bold;
+}
+  
+  .header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(189, 150, 150, 0.3);
+    color: white;
+    padding: 10px 20px;
+    transition: top 1s ease;
+    z-index: 1000;
+   
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background: transparent; */
+    opacity: 1;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .header-links h4 {
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* When the header is visible, it stays at the top */
+  .header.visible {
+    top: 0;
+  }
+  
+  /* When the header is hidden (scrolling down), it moves out of view */
+  .header.hidden {
+    top: -80px;
+  }
+  
+  /* Content styling for the page */
+  .content {
+    margin-top: 100px; /* Ensures content starts below the fixed header */
+    padding: 20px;
+  }
+  
+  /* Optional content styling */
+  .content h2 {
+    margin-top: 100px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Remove the default underline from links */
+.header-links a {
+  text-decoration: none;
+}
+
