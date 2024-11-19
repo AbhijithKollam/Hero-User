@@ -188,9 +188,10 @@ function Auth({ register }) {
                                             </div>
                                         ) : (
                                             <div>
-                                                {
+                                                { 
                                                     loading ?
-                                                        <button className="btn btn-warning rounded mt-3"><i className="fa-solid fa-spinner fa-spin"></i></button> :
+                                                        <button className="btn btn-warning rounded mt-3"><i className="fa-solid fa-spinner fa-spin"></i></button>
+                                                        :
                                                         <button
                                                             className="btn btn-warning rounded mt-3"
                                                             onClick={handleLogin}
