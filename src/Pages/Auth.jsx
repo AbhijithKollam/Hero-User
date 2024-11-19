@@ -123,7 +123,7 @@ function Auth({ register }) {
                     <div className='w-75 container'>
 
 
-                        <div className='card bg-transparent p-5 mt-3 rounded text-white'>
+                        <div className='card bg-transparent  mt-3 rounded text-white'>
                             <div className='row align-items-center'>
                                 <div className="col-lg-6 col-md-6">
                                     <img src={authImage} alt="auth " style={{ width: '100%', borderRadius: '50%' }} />
