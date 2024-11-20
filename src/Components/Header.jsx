@@ -39,7 +39,7 @@ const Header = () => {
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="header-container">
         <div className="header-title">
-          <h1>Mr X : Your Guardian</h1>
+          <p className='header-heading'>Mr X : Your Guardian</p>
         </div>
         <div className="header-links">
           <Link to='/home'><h4 className={getLinkClass('/home')}>Home</h4></Link>
