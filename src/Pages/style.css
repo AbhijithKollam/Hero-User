@@ -58,6 +58,12 @@
     height: 60vh;
   }
 }
+@media (min-width: 900px) {
+  .carousel-inner {
+    height: 100vh;
+  }
+}
+
 
 .title{
   font-weight: bold;
