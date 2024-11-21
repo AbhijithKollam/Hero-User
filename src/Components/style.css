@@ -3,98 +3,150 @@
   color: rgb(201, 183, 157);
   font-weight: bold;
 }
-  
+
+.header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(189, 150, 150, 0.3);
+  color: white;
+  padding: 10px 20px;
+  transition: top 1s ease;
+  z-index: 1000;
+
+}
+
+.header-heading {
+  font-size: 24px;
+}
+
+@media (max-width:630px) {
   .header {
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(189, 150, 150, 0.3);
-    color: white;
-    padding: 10px 20px;
-    transition: top 1s ease;
-    z-index: 1000;
-   
+    height: 60px;
   }
-  .header-heading{
-    font-size: 24px;
-  }
-  @media (max-width:630px){
-    .header{
-      height: 60px;
-    }
-    .header-heading {
-      font-size: 18px;
-    }
-  }
-  @media (max-width:400px){
-    .header{
-      height: 50px;
-    }
-    .header-heading{
-      font-size: 12px;
-    }
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    /* background: transparent; */
-    opacity: 1;
-  }
-  
-  .header-title h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .header-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .header-links h4 {
-    margin: 0;
-    cursor: pointer;
+
+  .header-heading {
     font-size: 18px;
-    color: white;
   }
-  
-  /* When the header is visible, it stays at the top */
-  .header.visible {
-    top: 0;
+}
+
+@media (max-width:400px) {
+  .header {
+    height: 50px;
   }
-  
-  /* When the header is hidden (scrolling down), it moves out of view */
-  .header.hidden {
-    top: -80px;
+
+  .header-heading {
+    font-size: 12px;
   }
-  
-  /* Content styling for the page */
-  .content {
-    margin-top: 100px; /* Ensures content starts below the fixed header */
-    padding: 20px;
-  }
-  
-  /* Optional content styling */
-  .content h2 {
-    margin-top: 100px;
-    font-size: 28px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .content p {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  /* Remove the default underline from links */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* background: transparent; */
+  opacity: 1;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-links h4 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+/* When the header is visible, it stays at the top */
+.header.visible {
+  top: 0;
+}
+
+/* When the header is hidden (scrolling down), it moves out of view */
+.header.hidden {
+  top: -80px;
+}
+
+/* Content styling for the page */
+.content {
+  margin-top: 100px;
+  /* Ensures content starts below the fixed header */
+  padding: 20px;
+}
+
+/* Optional content styling */
+.content h2 {
+  margin-top: 100px;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+}
+
+.content p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Remove the default underline from links */
 .header-links a {
   text-decoration: none;
+}
+
+
+
+
+
+
+/* Style for the chat icon */
+.chat-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Style for the chat modal */
+.chat-modal {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 80vh;
+  z-index: 1000;
+}
+
+/* Close button for the modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* background-color: red; */
+  color: rgb(29, 21, 21);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
 }
 

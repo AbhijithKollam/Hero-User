@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import img1 from '../Assets/image2.jpg';
 import Header from '../Components/Header';
 import { complaintApi, getUserCmpApi } from '../Services/allApi';
+import Bot from '../Components/Bot';
 
 function Complaints() {
     // State to manage modal visibility
@@ -197,6 +198,9 @@ function Complaints() {
                     </tbody>
                 </table>
 
+            </div>
+            <div>
+                <Bot/>
             </div>
             
         </div>

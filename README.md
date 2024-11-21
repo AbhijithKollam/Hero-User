@@ -7,6 +7,7 @@ used by the Common Peoples
 ## Features Implemented
 
 -Password Encryption
+-implemnts chatbot (chatGPT)
 -All Super Heros will get Gmail when a new Complaint added by users
 -Can send Complaints to Super Hero
 -List the past complaints history by that current logged in user
